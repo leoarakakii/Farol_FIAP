@@ -3,14 +3,22 @@
 ## Integrantes 
 
 Isabela Silva Santos - RM:564589
+
 Leonardo Franco Arakaki - RM:571301	
+
 Murilo de Melo Sousa - RM:571117
+
 Samuel Liasch Alves - RM:573814
+
 Walisson Souza dos Santos - RM:570174
 
+
+
 Github: https://github.com/leoarakakii/Farol_FIAP.git
+
 Deploy: https://farol-fiap.vercel.app/
-Video pitch: 
+
+Video pitch:  https://drive.google.com/file/d/1zEyo47mig5AHAYyfQt4A6Lesqkb_j2Gg/view
 
 ## Contexto | Problema social
 
