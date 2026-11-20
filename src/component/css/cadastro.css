@@ -1,0 +1,267 @@
+
+  
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+    .Cadastro-body {
+        --bg: #93CBDA;
+      --card: #E3F9FF;
+      --accent: #2C869E;
+      --accent-dark: #1E6578;
+      --text: #12404D;
+      --muted: #3F6F7D;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .page:target { display: block; }
+    #login { display: block; }
+    .page:target ~ #login { display: none; }
+    #login:target { display: block; }
+
+    .card {
+      padding: 40px 32px;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 12px 32px rgba(44, 134, 158, 0.25);
+    }
+
+    h1 { font-size: 1.75rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 6px; }
+    .subtitle { color: var(--muted); margin-bottom: 28px; }
+
+    .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
+    label { font-size: 0.9rem; font-weight: 600; }
+
+    .input { position: relative; }
+    .input i {
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      transform: translateY(-50%);
+      color: var(--accent);
+      pointer-events: none;
+    }
+    .input input {
+      width: 100%;
+      padding: 12px 14px 12px 42px;
+      font: inherit;
+      color: var(--text);
+      background: #fff;
+      border: 1.5px solid var(--accent);
+      border-radius: 10px;
+    }
+    .input input::placeholder { color: #7FA6B1; }
+    .input input:focus-visible { outline: 3px solid rgba(44, 134, 158, 0.35); outline-offset: 1px; }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      margin-top: 8px;
+      padding: 13px;
+      font: inherit;
+      font-weight: 700;
+      color: #fff;
+      background: var(--accent);
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: var(--accent-dark); }
+    .btn:focus-visible { outline: 3px solid rgba(44, 134, 158, 0.45); outline-offset: 2px; }
+
+    a { color: var(--accent-dark); font-weight: 600; }
+    a:hover { color: var(--accent); }
+    a:focus-visible { outline: 3px solid rgba(44, 134, 158, 0.45); outline-offset: 2px; border-radius: 4px; }
+
+    .switch { margin-top: 24px; font-size: 0.95rem; text-align: center; color: var(--muted); }
+
+.App-content > .Cadastro-body {
+  --bg: var(--cor1);
+  --card: #fff;
+  --accent: #3a7ca5;
+  --accent-dark: var(--azul-marinho);
+  --text: var(--azul-marinho);
+  --muted: #334155;
+}
+
+.auth-page {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  padding: 0;
+  color: var(--text);
+  background: transparent;
+}
+
+.modal-content {
+  --card: #fff;
+  --accent: #3a7ca5;
+  --accent-dark: var(--azul-marinho);
+  --text: var(--azul-marinho);
+  --muted: #334155;
+  border: none;
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.modal-content .card {
+  width: 100%;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.modal-content h1 {
+  margin-bottom: 8px;
+  color: var(--azul-marinho);
+  font-size: 1.6rem;
+}
+
+.modal-content .subtitle {
+  margin-bottom: 24px;
+  color: #475569;
+}
+
+.modal-content .field {
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.modal-content label {
+  color: var(--azul-marinho);
+}
+
+.modal-content .input input {
+  border-color: #3a7ca5;
+  border-radius: 10px;
+}
+
+.modal-content .input input:focus-visible {
+  outline: 2px solid rgba(58, 124, 165, 0.4);
+  outline-offset: 2px;
+}
+
+.modal-content .btn {
+  margin-top: 8px;
+  color: #fff;
+  background: #258ca5;
+  border-radius: 10px;
+}
+
+.modal-content .btn:hover {
+  background: #1e6578;
+}
+
+.modal-content .link-btn {
+  color: #258ca5;
+}
+
+.modal-content .switch {
+  color: #475569;
+}
+
+.modal-content .auth-message {
+  margin-bottom: 12px;
+  color: #166534;
+  font-size: 0.875rem;
+}
+
+.modal-content .auth-message-error {
+  color: #b91c1c;
+}
+
+.App-content > .Cadastro-body .auth-buttons .btn {
+  width: auto;
+  min-width: 130px;
+  margin: 0;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+
+.App-content > .Cadastro-body .auth-buttons .btn-login {
+  color: var(--azul-marinho);
+  background: #fff;
+  border: 1px solid rgba(10, 34, 57, 0.2);
+}
+
+.App-content > .Cadastro-body .auth-buttons .btn-signup {
+  color: #fff;
+  background: #258ca5;
+  border: 1px solid #258ca5;
+}
+
+@media (max-width: 480px) {
+  .modal-content .card {
+    padding: 28px 20px;
+  }
+
+  .App-content > .Cadastro-body .auth-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

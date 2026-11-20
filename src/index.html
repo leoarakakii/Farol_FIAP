@@ -1,0 +1,92 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="page">
+    <main class="panel">
+      <h1 class="panel__title">Enviar conteúdo educacional</h1>
+
+      <!-- Ao integrar com back-end: troque action pela sua rota e use method="post" -->
+      <form class="form" action="#" method="get">
+
+        <div class="form__group">
+          <label class="form__label" for="titulo">Título</label>
+          <input class="form__input" type="text" id="titulo" name="titulo" required>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="conteudo">Conteúdo</label>
+          <select class="form__select" id="conteudo" name="conteudo">
+            <option value="artigo">Artigo</option>
+            <option value="video">Vídeo</option>
+            <option value="podcast">Podcast</option>
+            <option value="curso">Curso</option>
+            <option value="ebook">E-book</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="categoria">Categoria</label>
+          <select class="form__select" id="categoria" name="categoria" required>
+            <option value="" selected disabled hidden>Selecione a categoria</option>
+            <option value="programacao">Programação</option>
+            <option value="design">Design</option>
+            <option value="dados">Dados</option>
+            <option value="negocios">Negócios</option>
+          </select>
+        </div>
+
+        <!-- O script.js mostra aqui apenas as subcategorias da categoria escolhida -->
+        <div class="form__group">
+          <select class="form__select" id="subcategoria" name="subcategoria" aria-label="Subcategoria" required>
+            <option value="" selected disabled hidden>Subcategoria 1</option>
+            <optgroup label="Programação">
+              <option value="front-end" data-categoria="programacao">Front-end</option>
+              <option value="back-end" data-categoria="programacao">Back-end</option>
+              <option value="mobile" data-categoria="programacao">Mobile</option>
+            </optgroup>
+            <optgroup label="Design">
+              <option value="ui" data-categoria="design">UI</option>
+              <option value="ux" data-categoria="design">UX</option>
+              <option value="identidade-visual" data-categoria="design">Identidade visual</option>
+            </optgroup>
+            <optgroup label="Dados">
+              <option value="analise-de-dados" data-categoria="dados">Análise de dados</option>
+              <option value="ciencia-de-dados" data-categoria="dados">Ciência de dados</option>
+              <option value="engenharia-de-dados" data-categoria="dados">Engenharia de dados</option>
+            </optgroup>
+            <optgroup label="Negócios">
+              <option value="empreendedorismo" data-categoria="negocios">Empreendedorismo</option>
+              <option value="marketing" data-categoria="negocios">Marketing</option>
+              <option value="gestao-de-projetos" data-categoria="negocios">Gestão de projetos</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="link">Link</label>
+          <input class="form__input" type="url" id="link" name="link" placeholder="Insira o link aqui (ex: https://...)" required>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="tag">Tags</label>
+          <div class="tags__box">
+            <input class="tags__input" type="text" id="tag" maxlength="20" autocomplete="off">
+            <button class="tags__add" id="tag-add" type="button" aria-label="Adicionar tag">+</button>
+          </div>
+          <ul class="tags__list" id="tag-list"></ul>
+        </div>
+
+        <div class="form__actions">
+          <button class="btn btn--cancel" type="reset">Cancelar</button>
+          <button class="btn btn--submit" type="submit">Enviar conteúdo</button>
+        </div>
+
+      </form>
+    </main>
+  </div>
+
+</body>
+</html>

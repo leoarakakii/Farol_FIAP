@@ -1,0 +1,23 @@
+.content-report-button {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  flex: none;
+  place-items: center;
+  padding: 0;
+  color: #b91c1c;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content-report-button:hover {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.content-report-button:focus-visible {
+  outline: 2px solid #b91c1c;
+  outline-offset: 2px;
+}

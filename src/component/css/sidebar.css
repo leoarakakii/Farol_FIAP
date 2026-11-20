@@ -1,0 +1,191 @@
+.Sidebar {
+  position: relative;
+  z-index: 2;
+  flex: none;
+  width: 220px;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  transition: width 0.3s ease;
+  overflow: visible;
+}
+
+.Sidebar.collapsed {
+  width: 64px;
+}
+
+.Sidebar-brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.Sidebar-brand-logo {
+  display: block;
+  width: 100%;
+  max-width: 188px;
+  max-height: 130px;
+  object-fit: contain;
+}
+
+.Sidebar.collapsed .Sidebar-brand {
+  min-height: 44px;
+}
+
+.Sidebar.collapsed .Sidebar-brand-logo {
+  width: 40px;
+  height: 40px;
+  max-height: 44px;
+}
+
+.toggle-btn {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  display: grid;
+  width: 26px;
+  height: 44px;
+  place-items: center;
+  padding: 0;
+  color: var(--azul-marinho);
+  background: #fff;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.toggle-btn:focus-visible {
+  outline: 2px solid #258ca5;
+  outline-offset: 2px;
+}
+
+.Sidebar-link-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.Sidebar .Cadastro-body {
+  min-height: 0;
+  width: 100%;
+  display: block;
+  margin-top: auto;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  line-height: normal;
+}
+
+.Sidebar .auth-buttons {
+  width: 100%;
+  gap: 6px;
+}
+
+.Sidebar .auth-buttons .btn {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 10px 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.Sidebar.collapsed .Cadastro-body {
+  display: none;
+}
+
+.Sidebar-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.Sidebar-notification-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #dc2626;
+}
+
+.Sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: auto;
+  padding: 8px;
+  color: var(--azul-marinho);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.Sidebar-profile:hover {
+  background-color: #f5fafc;
+}
+
+.Sidebar-profile-avatar {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  color: var(--azul-marinho);
+  background-color: #eaf5f8;
+  border: 1px solid #3a7ca5;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.Sidebar-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Sidebar-profile-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Sidebar.collapsed .Sidebar-profile {
+  justify-content: center;
+  padding: 4px;
+}
+
+.Sidebar-profile-error {
+  margin-top: auto;
+  color: #b91c1c;
+  font-size: 0.75rem;
+}
+
+.Sidebar-moderation-error {
+  color: #b91c1c;
+  font-size: 0.75rem;
+}
